@@ -8,13 +8,15 @@
       content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
     />
     <meta http-equiv="Referrer-Policy" content="no-referrer" />
-    <title>Secure Password Generator – Free Strong Random Passwords</title>
+    <title>Password Generator – Free Strong &amp; Secure Random Passwords | Rean-IT</title>
     <meta
       name="description"
-      content="Free secure password generator. Create strong random passwords with symbols, numbers, and custom words – generated privately in your browser, never sent online."
+      content="Free password generator to create strong, secure, random passwords instantly. Add symbols, numbers, uppercase, lowercase and custom Khmer or English words. 100% private – generated in your browser."
     />
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="googlebot" content="index,follow" />
     <meta name="author" content="Rean-IT" />
+    <meta name="publisher" content="Rean-IT" />
     <meta name="application-name" content="Secure Password Generator" />
     <meta name="apple-mobile-web-app-title" content="Password Generator" />
     <meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)" />
@@ -27,13 +29,163 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Rean-IT" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Secure Password Generator – Free Strong Random Passwords" />
+    <meta property="og:locale:alternate" content="km_KH" />
+    <meta property="og:title" content="Password Generator – Free Strong &amp; Secure Random Passwords" />
     <meta
       property="og:description"
-      content="Free secure password generator. Create strong random passwords with symbols, numbers, and custom words – generated privately in your browser, never sent online."
+      content="Create strong, secure, random passwords instantly. Private, free, no sign-up – generated on your device."
     />
+    <meta property="og:image" content="./og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Secure Password Generator by Rean-IT" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Password Generator – Free Strong &amp; Secure Random Passwords" />
+    <meta
+      name="twitter:description"
+      content="Create strong, secure, random passwords instantly. Private, free, no sign-up – generated on your device."
+    />
+    <meta name="twitter:image" content="./og-image.png" />
+    <meta name="twitter:image:alt" content="Secure Password Generator by Rean-IT" />
     <link rel="stylesheet" href="./style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "name": "Secure Password Generator",
+            "alternateName": [
+              "Strong Password Generator",
+              "Random Password Generator"
+            ],
+            "description": "Free online password generator that creates strong, secure, random passwords locally in your browser with symbols, numbers, uppercase, lowercase and custom words.",
+            "applicationCategory": "SecurityApplication",
+            "operatingSystem": "Any",
+            "browserRequirements": "Requires JavaScript",
+            "isAccessibleForFree": true,
+            "inLanguage": [
+              "en",
+              "km"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "featureList": [
+              "Cryptographically secure random passwords (Web Crypto API)",
+              "Custom password length",
+              "Symbols, numbers, uppercase and lowercase",
+              "Custom Khmer and English words",
+              "Exclude similar and ambiguous characters",
+              "Generated locally, never sent online",
+              "Memory hint to remember your password",
+              "Dark mode"
+            ],
+            "publisher": {
+              "@type": "Organization",
+              "name": "Rean-IT",
+              "url": "https://rean-it.com"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does this password generator work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It creates a random password based on your selected options directly in your browser, including length, symbols, numbers, uppercase letters, lowercase letters, and custom words."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this password generator secure?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. The generator runs locally in your browser and uses the cryptographically secure Web Crypto API, so the password creation process stays on your device instead of relying on a remote server."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you store or see my passwords?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Passwords are never sent to or saved on any server. If you enable \"Save My Preference\", only your settings are saved in your own browser, not the passwords."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this password generator free?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. It is completely free, works on desktop and mobile, and does not require an account."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is a strong password?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A strong password is long, unique, hard to predict, and uses a balanced mix of characters. Avoid names, dates, short words, and reused passwords."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long should my password be?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Use at least 12 characters for everyday accounts and 16 to 20 or more characters for email, banking, and other important accounts. Longer passwords are much harder to crack."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why exclude similar and ambiguous characters?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Characters like i, l, 1, o, and 0 look alike, and some symbols are hard to type on certain keyboards. Excluding them makes passwords easier to read and type without a meaningful loss of strength when the password is long."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I add my own words to the password?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Enable \"Include Your Custom Word\" and enter comma-separated words, in English, Khmer, or any other language, to create a password that is easier to remember."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is it safe to use an online password generator?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It is safe when the password is generated on your own device. This tool works entirely in your browser and even keeps working offline after the page loads, so no password ever leaves your computer or phone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use this to generate a Wi-Fi password?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Choose a length between 16 and 63 characters, keep \"Exclude Similar Characters\" and \"Exclude Ambiguous Characters\" on, and the result will be easy to type on phones, TVs, and other devices."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between a random password and a passphrase?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A random password mixes letters, numbers, and symbols for maximum strength in fewer characters. A passphrase joins several words, which is easier to remember. Combine both by adding custom words to a random password."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <main class="page">
@@ -43,8 +195,8 @@
             <div class="hero__icon" aria-hidden="true">🔑</div>
             <div>
               <h1 id="app-title">Secure Password Generator</h1>
-              <p class="hero__subtitle">Fast, local, and generated on your device. Brought to you by <a href="https://rean-it.com" target="_blank" rel="noopener" title="រៀន IT និង coding ជាមួយការ support ប្រចាំខែ">rean-it.com</a></p>
-              <p class="hero__subtitle">រៀនអាយធីជាមួយការ​ support monthly. <a target="_blank" href="https://shorturl.at/khCuD" rel="noopener noreferrer" title="រៀន IT និង coding ជាមួយការ support ប្រចាំខែ">ចុះឈ្មោះឥឡូវនេះ →</a></p>
+              <p class="hero__subtitle">Fast, local, and generated on your device. <a href="https://rean-it.com" title="រៀន​ it, រៀន​ coding, រៀន it ជាមួយការ​ support monthly. -> https://rean-it.com">rean-it.com</a></p>
+              <p class="hero__subtitle">រៀនអាយធីជាមួយការ​ support monthly. <a target="_blank" href="https://shorturl.at/khCuD" rel="noopener noreferrer" title="រៀន​ it, រៀន​ coding, រៀនអាយធីជាមួយការ​ support monthly.">https://shorturl.at/khCuD</a></p>
             </div>
           </div>
 
@@ -298,6 +450,24 @@
           <p>
             Yes. Enable "Include Your Custom Word" and enter comma-separated words, in English, Khmer, or any other
             language, to create a password that is easier to remember.
+          </p>
+
+          <h3>Is it safe to use an online password generator?</h3>
+          <p>
+            It is safe when the password is generated on your own device. This tool works entirely in your browser and
+            even keeps working offline after the page loads, so no password ever leaves your computer or phone.
+          </p>
+
+          <h3>Can I use this to generate a Wi-Fi password?</h3>
+          <p>
+            Yes. Choose a length between 16 and 63 characters, keep "Exclude Similar Characters" and "Exclude Ambiguous
+            Characters" on, and the result will be easy to type on phones, TVs, and other devices.
+          </p>
+
+          <h3>What is the difference between a random password and a passphrase?</h3>
+          <p>
+            A random password mixes letters, numbers, and symbols for maximum strength in fewer characters. A passphrase
+            joins several words, which is easier to remember. Combine both by adding custom words to a random password.
           </p>
         </section>
       </section>
