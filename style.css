@@ -115,6 +115,18 @@ h1 {
   font-size: 1rem;
 }
 
+.hero__subtitle a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.hero__subtitle a:hover,
+.hero__subtitle a:focus-visible {
+  color: var(--accent-dark);
+}
+
 .language-picker select,
 #length,
 #password-output {
