@@ -526,3 +526,76 @@ button:active {
 .seo-copy td {
   color: var(--muted);
 }
+
+.donate-rail {
+  position: fixed;
+  top: 50%;
+  right: 18px;
+  z-index: 40;
+  transform: translateY(-50%);
+}
+
+.donate-card {
+  display: block;
+  width: 180px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid var(--panel-edge);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  transition: transform 160ms ease;
+}
+
+.donate-card:hover,
+.donate-card:focus-visible {
+  transform: translateY(-2px);
+}
+
+.donate-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.donate-pill {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+.donate-pill:hover,
+.donate-pill:focus-visible {
+  background: var(--accent-dark);
+}
+
+@media (max-width: 1379px) {
+  .donate-rail {
+    top: auto;
+    bottom: 20px;
+    right: 16px;
+    transform: none;
+  }
+
+  .donate-card {
+    display: none;
+  }
+
+  .donate-pill {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .donate-rail {
+    bottom: 14px;
+    right: 12px;
+  }
+}
