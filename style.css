@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Khmer OS Battambang';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Khmer OS Battambang'), local('KhmerOSBattambang'), url('./fonts/battambang-khmer-400.woff2') format('woff2');
+  unicode-range: U+1780-17FF, U+19E0-19FF, U+200B-200D, U+25CC;
+  size-adjust: 87.5%;
+}
+
+@font-face {
+  font-family: 'Khmer OS Battambang';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Khmer OS Battambang Bold'), local('KhmerOSBattambang-Bold'), url('./fonts/battambang-khmer-700.woff2') format('woff2');
+  unicode-range: U+1780-17FF, U+19E0-19FF, U+200B-200D, U+25CC;
+  size-adjust: 87.5%;
+}
+
 :root {
   --bg: #f4f1eb;
   --panel: #ffffff;
@@ -43,7 +63,7 @@ a {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: Georgia, 'Times New Roman', 'Khmer OS Battambang', serif;
   background: radial-gradient(circle at top left, rgba(201, 168, 104, 0.16), transparent 28%),
     linear-gradient(180deg, #fbfaf7 0%, var(--bg) 100%);
   color: var(--text);
